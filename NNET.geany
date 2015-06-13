@@ -1,0 +1,50 @@
+[file_prefs]
+final_new_line=true
+ensure_convert_new_lines=false
+strip_trailing_spaces=false
+replace_tabs=false
+
+[indentation]
+indent_width=4
+indent_type=1
+indent_hard_tab_width=8
+detect_indent=false
+detect_indent_width=false
+indent_mode=2
+
+[project]
+name=NNET
+base_path=./
+description=A fast, efficient, and small web browser in a bloated userspace.
+file_patterns=*.cpp;*.hpp;*hpp.in;
+
+[long line marker]
+long_line_behaviour=2
+long_line_column=80
+
+[files]
+current_page=-1
+
+[build-menu]
+EX_00_LB=_Execute
+EX_00_CM=%p/run.sh -d
+EX_00_WD=%p
+ShFT_00_LB=Build
+ShFT_00_CM=./build.sh
+ShFT_00_WD=%p
+ShFT_01_LB=Build Debug
+ShFT_01_CM=./build.sh -DEBUG
+ShFT_01_WD=%p
+ShFT_02_LB=Build Unittest
+ShFT_02_CM=./build.sh -UNITTEST
+ShFT_02_WD=%p
+filetypes=Sh;C++;None;
+C++FT_00_LB=_Compile
+C++FT_00_CM=g++ -Wall -c "%f"
+C++FT_00_WD=
+C++FT_01_LB=_Build
+C++FT_01_CM=%p/build.sh -d
+C++FT_01_WD=%p
+NoneFT_00_LB=Build
+NoneFT_00_CM=%p/build.sh -d
+NoneFT_00_WD=%p
