@@ -1,5 +1,6 @@
 Description
 ================================================================================
+Stands for "NEET Net".
 A fast, efficient, and small web browser in a bloated userspace.
 
 License
